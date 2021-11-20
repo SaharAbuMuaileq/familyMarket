@@ -1,3 +1,6 @@
+body{
+    background-color: #fff3e6;
+}
 .offers{
     background-color: #fff3e6;
     display: flex;
@@ -41,78 +44,63 @@
 }
 .offers .bxesss{
     width: 100%;
-}
-.offers .offer .box .discount{
-    border: 1px solid rgb(255, 255, 0);
+    background-color: #fff3e6;
 }
 .dis span{
-    color:rgba(173, 0, 0, 0.534);
+    color: #fff;
     font-weight: bold;
 
 }
-.offers .offer .box .dis{
-    background-color: rgb(255, 255, 0);
-    text-align: center;
+.offers .box  .dis{
+  
+   text-align: center;
+   background-color: #28a745;
+   animation:linear 1s ease-in-out infinite;
 }
 .offers .offe ,.offers .off{
     margin: 10px;
 }
 
 
-.offers .offe .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-}
+
 .offers .offe .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
 }
  /* .offers .electron{
 
 }  */
 .offers .electron .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
 
 }
-.offers .electron .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+.offers  .box .discount{
+    background-color: #FFF;
     width: calc(100% / 4 - 40px);
-    margin: 15px;
-  
-    
+    margin: 15px;  
 }
-
 
 .offers .electron .box{
     display: flex;
     flex-wrap: wrap;
-   
+    
 }
 .offers .electron .box .discount .price{
     padding: 15px 20px;
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 
 }
-
-
-
-
-
-
 .offers .offer .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
-
+    
 }
 .offers .offer .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+    background-color: #FFF;
     width: calc(100% / 4 - 40px);
     margin: 15px;
-  
-    
 }
 
 
@@ -123,31 +111,19 @@
 }
 .offers .offer .box .discount .price{
     padding: 15px 20px;
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .offers .baskot .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
 
 }
 .offers .baskot .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+    background-color: #FFF;
     width: calc(100% / 4 - 40px);
     margin: 15px;
   
@@ -162,6 +138,8 @@
 }
 .offers .baskot .box .discount .price{
     padding: 15px 20px;
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 
 }
 .offers .bb{
@@ -172,28 +150,13 @@
     text-align: center;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .offers .labn .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
 
 }
 .offers .labn .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+    background-color: #FFF;
     width: calc(100% / 4 - 40px);
     margin: 15px;
   
@@ -207,19 +170,18 @@
 
 .offers .labn .box .discount .price{
     padding: 15px 20px;
-
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 }
 
 
 .offers .all .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
 
 }
 .offers .all .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+    background-color: #FFF;
     width: calc(100% / 4 - 40px);
     margin: 15px;
    
@@ -231,19 +193,17 @@
 }
 .offers .all .box .discount .price{
     padding: 15px 20px;
-
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 }
 
 
 .offers .all .box .dis{
-    background-color: rgb(255, 255, 0);
+    background-color: #28a745;
     text-align: center;
-
 }
 .offers .all .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+    background-color: #FFF;
     width: calc(100% / 4 - 40px);
     margin: 15px;
    
@@ -255,20 +215,19 @@
 }
 .offers .labn .box .discount .price{
     padding: 15px 20px;
-
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 }
 
 
 
 .offers .cllean .box .dis{
-    background-color: rgb(255, 255, 0);
     text-align: center;
-
+    animation: linear 2s ease-in-out infinite;
+    -webkit-animation: linear 2s ease-in-out infinite;
 }
 .offers .cllean .box .discount{
-    border: 1px solid rgb(255, 255, 0);
-   
-    background-color: #E4BE96;
+    background-color: #fff;
     width: calc(100% / 4 - 40px);
     margin: 15px;
    
@@ -293,16 +252,18 @@
 }
 .offers .cllean .box .discount .price{
     padding: 15px 20px;
-
+    box-shadow: 0 0 5px 0 #6c757d;
+    background-color: #fff;
 }
 
-
-a:hover{
-    box-shadow: 5px 5px 5px yellow;
+.off a:hover{
+    box-shadow: 5px 5px 5px  #fff;
    font-size: 20px;
-
+    color: #9a8174;
 }
-
+footer a:hover{
+    box-shadow: 0 0 0 transparent;
+}
 
 @media (max-width:1200px) {
     .offers .off{
@@ -311,10 +272,7 @@ a:hover{
     }
     .offers .baskot .box .discount{
       
-        width: calc(100% / 2 - 40px);
-      
-      
-        
+        width: calc(100% / 2 - 40px);  
     }
     .offers .offer .box .discount{
      
@@ -403,11 +361,7 @@ a:hover{
        
         background-color: #E4BE96;
         width: calc(100% / 1 - 40px);
-      
-      
-        
     } 
-   
-    
-    
+      
 }
+

@@ -27,7 +27,7 @@ a:hover{
 div.style{
     width: 40%;
      margin: auto;
-    background-color: #402f27;
+     background-color: #62555d;
     display: flex; flex-direction: column;
    
     padding: 40px 40px;
@@ -36,23 +36,37 @@ div.style{
     div.style{
         width: 80%;
 
-    }
-       
-   
-    
-    
+    }  
 }
 div.style .form-group{
     margin-bottom: 40px;
     color: #62555D;
    
 }
+.name input{
+    margin-top: 40px;
+}
  .name input, .phone input , .btn{
     border: 2px solid  #E4BE96;
         width: 100%;
        color: #E4BE96;
-       background-color: transparent;
-     
+       background-color: transparent;   
+}
+.phone input:focus{
+    background-color: #e4be96;
+    outline: none;
+    border: none;
+}
+.name input:focus{
+    background-color: #e4be96;
+    outline: none;
+    border: none; 
+}
+.phone input::placeholder{
+    color: #fff;
+}
+.name input::placeholder{
+    color: #fff;
 }
 .checked label{
     color: #f7e9da;
@@ -65,12 +79,7 @@ div.style .form-group{
     font-size: 15px;
 
     }
-       
-   
-    
-    
 }
-
 
 .checked span{
     color: #E4BE96;
@@ -79,7 +88,8 @@ div.style .form-group{
 
 img{
     width:100%;
-    padding-bottom: 25px;
+    animation: puls 1s ease-in-out infinite;
+    border-radius: 15px;
 }
 
 div.style .form-group:last-child{
@@ -103,5 +113,11 @@ h1{
     margin-bottom: 40px;
     text-shadow: 4px 3px  #62555D ;
 }
+
+/* animation for logo img */
+@keyframes puls {
+    0%{ box-shadow: 0 0 20px 10px #E4BE96 ;}
+     50%{ box-shadow: 0 0 20px 5px #E4BE96 ; }
+      100%{ box-shadow: 0 0 20px 10px #E4BE96;}}
 
 

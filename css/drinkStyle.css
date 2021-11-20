@@ -158,10 +158,26 @@ footer ul li:hover a i{
  box-shadow: 0 0 5px 0 #6c757d;
  width:220px;
  height: 260px;
+ overflow: hidden;
 }
 .diaryContentSection .box img{
    width: 60%;
 }
+.diaryContentSection .box img:hover{
+    animation: ball 2s ease-in-out  infinite;
+ }
 .diaryContentSection .btn-success{
 float: left;
 }
+.diaryContentSection .box p{
+    margin-top: 10px;
+}
+
+
+/* animation for boxes */
+@keyframes ball {
+    0%{ transform:perspective(100px) translateZ(20px);}
+    50%{ transform:perspective(100px) translateZ(20px);}
+     100%{ transform:perspective(100px) translateZ(20px);} 
+ }
+ 

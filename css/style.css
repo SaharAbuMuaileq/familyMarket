@@ -5,7 +5,9 @@ family market-homePage
  */
 
  *{
-     margin: 0; padding: 0; box-sizing: border-box;
+     margin: 0;
+      padding: 0;
+      box-sizing: border-box;
      font-family: JF;
  }
  /* Global Definition start */
@@ -16,6 +18,7 @@ family market-homePage
  .flex-row{
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
  }
  .container{
      width: 80%;
@@ -24,8 +27,8 @@ family market-homePage
 
  /* navBar start */
  .navBarSection {
-     background-color: #62555D;
-     height: 12vh;
+     background-color: #402f27;
+    min-height: 12vh;
      padding-right: 120px;
  }
  
@@ -79,13 +82,46 @@ family market-homePage
     border-bottom: 2px solid #fff;
     
 }
+
+
+
+
+@media (max-width:700px){
+    .navBarSection .menu li{
+        display: flex;
+        flex-direction: column;
+        margin: auto !important;
+        text-align: center !important;
+    
+    }
+    .navBarSection img{
+        padding-top: 20px;
+    }
+    .navBarSection .menu li a{
+        margin: 15px;
+       
+      
+       
+    }
+    .navBarSection .search{
+       
+        left:0px;
+       margin: auto !important;
+    }
+    .navBarSection .form-control{
+      
+        padding-left:100px;
+    }
+
+}
+
  /* navBar end */
  /* productSection start */
  .productSection{
     padding: 10px;
     box-shadow: 0 0 5px 0 #504949 ;
  }
- .productSection h5{
+ .productSection h6{
      color: #504949;
  }
  .productSection i{
@@ -102,8 +138,22 @@ family market-homePage
 .carouselSection .container{
     padding: 0;
 }
- .carouselSection img{
+ .carouselSection .carousel-item:nth-of-type(1){
      background-image: url(../imgs/food1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height:300px;
+     border-radius: 15px;
+ }
+ .carouselSection .carousel-item:nth-of-type(2){
+     background-image: url(../imgs/recipes.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height:300px;
+     border-radius: 15px;
+ }
+ .carouselSection .carousel-item:nth-of-type(3){
+     background-image: url(../imgs/recipes.png);
      background-repeat: no-repeat;
      background-size: cover;
      height:300px;
@@ -125,7 +175,7 @@ family market-homePage
     background-color: #E4BE96;
     border-radius: 50%;
     transform: perspective(0) translateZ(0);
- }
+}
  .importantProduct .box img{
     width: 100px;
     height: 100px;
@@ -190,7 +240,7 @@ family market-homePage
     position: absolute; 
     top: 120px; 
     width: 100%; 
-    height: 80vh; 
+    min-height: 100vh; 
     color:#fff; 
     background-color: #402F27;
  }
@@ -210,7 +260,7 @@ family market-homePage
 }
  .classPart .showDetails{
      width: 60%;
-     height: 500px;
+     min-height: 300px;
      background-color: #fff;
      position: absolute;
      top:40px;
@@ -225,6 +275,27 @@ family market-homePage
  }
  
  .drinksDetails{
+     display: none;
+ }
+ .cleanDetails{
+     display: none;
+ }
+ .jamDetails{
+     display: none;
+ }
+ .riceDetails{
+     display: none;
+ }
+ .biscuitDetails{
+     display: none;
+ }
+ .macaroniDetails{
+     display: none;
+ }
+ .spicesDetails{
+     display: none;
+ }
+ .chepsiDetails{
      display: none;
  }
  
@@ -256,18 +327,32 @@ family market-homePage
  }
 
 .diaryContentSection .box{
-    margin-left: 10px;
-    padding: 10px;
+  margin-left: 10px;
+  padding: 10px;
   margin-top: 30px;
   box-shadow: 0 0 5px 0 #6c757d;
   width:220px;
   height: 260px;
+  overflow: hidden;
 }
 .diaryContentSection .box img{
     width: 60%;
 }
+.diaryContentSection .box p{
+    margin-top: 10px;
+}
+.diaryContentSection .box img:hover{
+   animation: ball 2s ease-in-out  infinite;
+}
 .diaryContentSection .btn-success{
  float: left;
+}
+
+/* animation for boxes */
+@keyframes ball {
+   0%{ transform:perspective(100px) translateZ(20px);}
+   50%{ transform:perspective(100px) translateZ(20px);}
+    100%{ transform:perspective(100px) translateZ(20px);} 
 }
 
 

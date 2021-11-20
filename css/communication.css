@@ -15,16 +15,14 @@ section.communicate a{
     transition: 0.5s;
 }
 section.communicate a:hover{
-    box-shadow: 5px 5px 5px yellow;
+    box-shadow: 5px 5px 5px #fff;
     color:rgb(255, 249, 238);
 
     text-decoration: none;
 }
 section.communicate .comm2 .comm{
     padding: 30px;
-   
     margin: 10px;
-   
    width: calc(100% / 4 - 20px );
 }
 section.communicate .comm1 .com{
@@ -76,12 +74,16 @@ section.communicate .comm1 .com .icon{
         color: #fae8d4;
         margin: 20px auto;
     }
-
-    section.communicate .comm1 .com .icon .ic:hover{
-     
-        
-    
-      
+      section.communicate .comm1 .com .icon:nth-of-type(1):hover .ic{
+        background-color:blue ;
+      }
+    section.communicate .comm1 .com .icon:nth-of-type(2):hover .ic{
+        background-color:#1d9bf0 ;
+      }
+    section.communicate .comm1 .com .icon:nth-of-type(3):hover .ic{
+        background-color:red ;
+      }
+    section.communicate .comm1 .com .icon:nth-of-type(4):hover .ic{
         background-color:#af1763 ;
       }
 
